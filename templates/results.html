@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Cloud Voting System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Voting Results</h2>
+        
+        <p>Candidate A</p>
+        <div class="results-bar">
+            <div class="results-fill" style="width: {{ percent_a }}%;"></div>
+            <div class="results-text">{{ votes_a }} Votes</div>
+        </div>
+
+        <p>Candidate B</p>
+        <div class="results-bar">
+            <div class="results-fill" style="width: {{ percent_b }}%; background-color: #ffd6a5;"></div>
+            <div class="results-text">{{ votes_b }} Votes</div>
+        </div>
+
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

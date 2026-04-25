@@ -1,0 +1,160 @@
+/* UI DESIGN SPEC */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f0ec; /* Soft beige */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #8c82fc; /* Pastel violet/lavender */
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h2 {
+    color: #7b9acc; /* Soft blue */
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+p.subtitle {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+    background-color: #b5e48c; /* Soft pastel green */
+    color: #2b5c2b;
+}
+
+.btn-primary:hover {
+    background-color: #99d98c;
+}
+
+.btn-secondary {
+    background-color: #e0bbff; /* Lavender */
+    color: #4a235a;
+}
+
+.btn-secondary:hover {
+    background-color: #d0a1ff;
+}
+
+.btn-candidate {
+    background-color: #ffd6a5; /* Soft orange/peach */
+    color: #bf5e00;
+    margin-bottom: 15px;
+}
+
+.btn-candidate:hover {
+    background-color: #ffc280;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fafafa;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #8c82fc;
+}
+
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8dbdf;
+    color: #721c24;
+}
+
+.results-bar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 30px;
+    position: relative;
+}
+
+.results-fill {
+    height: 100%;
+    background-color: #ffb5a7; /* Pastel pink */
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.results-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #555;
+}

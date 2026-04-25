@@ -1,0 +1,30 @@
+# Environment & Secrets
+.env
+serviceAccountKey.json
+voting-system-*-firebase-adminsdk-*.json
+
+#Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+#Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+#IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+#OS Files
+.DS_Store
+Thumbs.db

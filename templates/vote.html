@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - Cloud Voting System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Select Your Candidate</h2>
+
+        {% if message %}
+            <div class="message {{ message_type }}">{{ message }}</div>
+            <a href="/results" class="btn btn-secondary">View Results</a>
+            <a href="/logout" class="back-link">Logout</a>
+        {% else %}
+            <form action="/vote" method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit" name="candidate" value="Candidate A" class="btn btn-candidate">Vote for Candidate A</button>
+                <button type="submit" name="candidate" value="Candidate B" class="btn btn-candidate">Vote for Candidate B</button>
+            </form>
+            <a href="/logout" class="back-link">Logout</a>
+        {% endif %}
+    </div>
+</body>
+</html>
